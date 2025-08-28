@@ -11,31 +11,139 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles/style.css" />
 
+    <!-- Font Awsome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Emergency Hotline</title>
   </head>
-  <body>
+  <body class="hind-madurai-light">
     <!-- Header -->
     <header class="header">
-      <div
-        class="container flex justify-between items-center border-2 border-red-500-h-[50px]"
-      >
-        <div class="logo flex items-center">
-          <span class="logo-icon:"><img src="./assets/logo.png" alt="" /></span>
-          <h1 class="">Emergency Hotline</h1>
+      <div class="container flex justify-between items-center">
+        <div class="logo flex items-center gap-2 ml-5 mt-2">
+          <span class="logo-icon"
+            ><img
+              src="./assets/logo.png"
+              alt=""
+              class="max-w-[50px] h-auto w-full"
+          /></span>
+          <h1 class="text-[#006747] text-2xl font-semibold">
+            Emergency<br />Service
+          </h1>
         </div>
-        <div class="header-section">
-          <div class="favorite-counter flex justify-between items-center">
-            <span class="favorites-icon"
-              ><img src="./assets/heart.png" alt=""
-            /></span>
-            <span class="favorites-count">0</span>
-            <span class="favorites-star"
-              ><img src="./assets/coin.png" alt=""
-            /></span>
-            <button class="btn btn-primary">Primary</button>
+        <div class="header-section mr-5">
+          <div class="favorite-counter flex justify-between items-center gap-4">
+            <!-- Heart count box -->
+            <div
+              class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-4"
+            >
+              <span class="favorites-icon-count">100</span>
+              <span class="favorites-icon"
+                ><img
+                  src="./assets/heart.png"
+                  class="w-6 h-6 rounded-full"
+                  alt=""
+              /></span>
+            </div>
+            <!-- Coin count box -->
+            <div
+              class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-3"
+            >
+              <span class="favorites-coin-count">60</span>
+              <span class="favorites-star"
+                ><img
+                  src="./assets/coin.png"
+                  class="w-5 h-5 rounded-full"
+                  alt=""
+              /></span>
+            </div>
+            <button class="btn btn-soft bg-[#00a63e] rounded-full text-white">
+              <span>0</span>Copy
+            </button>
           </div>
         </div>
       </div>
     </header>
+    <!-- Banner Section -->
+    <section class="bg-[#006747]">
+      <div class="flex flex-col items-center justify-center">
+        <div class="text-center mt-3">
+          <img
+            src="./assets/logo-dark.png"
+            class="max-w-[100px] h-auto mx-auto"
+            alt=""
+          />
+          <h1 class="text-white text-5xl font-bold mt-3">
+            Emergency Service Directory
+          </h1>
+          <p class="text-white text-[20px] font-bold mt-5 mb-3">
+            Government Emergency Services at Your Fingertip -A Project by
+            Government of the People's Republic of Bangladesh
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Main Body  -->
+    <section>
+      <!-- Emergency Hotline Card Section -->
+     <div class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative">
+  <!-- Top section -->
+  <div class="flex justify-between items-start mb-4">
+    <!-- Icon -->
+    <div class="w-20 h-20 rounded-xl bg-red-100 flex items-center justify-center">
+      <img src="./assets/emergency.png" alt="">
+      <!-- <i class="fas fa-siren-on text-red-600 text-xl"></i> -->
+    </div>
+
+    <!-- Heart button -->
+    <button
+      class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+      data-id="1"
+    >
+      <i class="fa-regular fa-heart"></i>
+    </button>
+  </div>
+
+  <!-- Content section -->
+  <div class="mb-4">
+    <h3 class="text-lg font-bold text-gray-900">National Emergency Number</h3>
+    <p class="text-sm text-gray-500">National Emergency</p>
+
+    <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+
+    <!-- Badge -->
+    <span class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800">
+      All
+    </span>
+  </div>
+
+  <!-- Action buttons -->
+  <div class="flex gap-3 mt-6">
+    <!-- Copy button -->
+    <button
+      class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
+      data-number="999"
+    >
+      <i class="fas fa-copy"></i>
+      <span>Copy</span>
+    </button>
+
+    <!-- Call button -->
+    <button
+      class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+      data-id="1"
+      data-name="National Emergency"
+      data-name-en="National Emergency"
+      data-number="999"
+      data-icon="fas fa-siren-on"
+      data-bg="from-green-500 to-green-600"
+    >
+      <i class="fas fa-phone"></i>
+      <span>Call</span>
+    </button>
+  </div>
+</div>
+
+    </section>
   </body>
 </html>
