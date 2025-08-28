@@ -87,8 +87,8 @@
       </div>
     </section>
     <!-- Main Body  -->
-    <section class="bg-[#f5fff6]">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <section class="bg-[#f5fff6] flex flex-col lg:flex-row gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
         <!-- Emergency Hotline Card Section 1-->
         <div
           class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative"
@@ -117,7 +117,7 @@
 
           <!-- Content section -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
+            <h3 class="text-2xl font-bold text-gray-900">
               National Emergency Number
             </h3>
             <p class="text-sm text-gray-500">National Emergency</p>
@@ -179,7 +179,7 @@
           </div>
           <!-- Content section  -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
+            <h3 class="text-2xl font-bold text-gray-900">
               Police Helpline Number
             </h3>
             <p class="text-sm text-gray-500">Police</p>
@@ -239,9 +239,7 @@
 
           <!-- Content section -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
-              Fire Service Number
-            </h3>
+            <h3 class="text-2xl font-bold text-gray-900">Fire Service Number</h3>
             <p class="text-sm text-gray-500">Fire Service</p>
 
             <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
@@ -308,9 +306,7 @@
 
           <!-- Content section -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
-              Ambulance Service
-            </h3>
+            <h3 class="text-2xl font-bold text-gray-900">Ambulance Service</h3>
             <p class="text-sm text-gray-500">Ambulance</p>
 
             <div class="text-3xl font-bold text-gray-900 mt-3">1994-999999</div>
@@ -377,7 +373,7 @@
 
           <!-- Content section -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
+            <h3 class="text-2xl font-bold text-gray-900">
               Women & Child Helpline
             </h3>
             <p class="text-sm text-gray-500">Women & Child</p>
@@ -446,7 +442,7 @@
 
           <!-- Content section -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
+            <h3 class="text-2xl font-bold text-gray-900">
               Anti-Corruption Helpline
             </h3>
             <p class="text-sm text-gray-500">Anti-Corruption</p>
@@ -515,7 +511,7 @@
 
           <!-- Content section -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
+            <h3 class="text-2xl font-bold text-gray-900">
               Electricity Helpline
             </h3>
             <p class="text-sm text-gray-500">Electricity Outstage</p>
@@ -566,11 +562,7 @@
             <div
               class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
             >
-              <img
-                src="./assets/brac.png"
-                class="h-[32px] w-[32px]"
-                alt=""
-              />
+              <img src="./assets/brac.png" class="h-[32px] w-[32px]" alt="" />
             </div>
 
             <!-- Heart button -->
@@ -584,9 +576,7 @@
 
           <!-- Content section -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
-              Brac Helpline
-            </h3>
+            <h3 class="text-2xl font-bold text-gray-900">Brac Helpline</h3>
             <p class="text-sm text-gray-500">Brac</p>
 
             <div class="text-3xl font-bold text-gray-900 mt-3">16445</div>
@@ -651,8 +641,8 @@
           </div>
           <!-- Content Section -->
           <div class="mb-4">
-            <h3 class="text-lg font-bold text-gray-900">
-              Bangladesh Railway Helpline
+            <h3 class="text-2xl font-bold text-gray-900">
+              BD Railway Helpline
             </h3>
             <p class="text-sm text-gray-500">Bangladesh Railway</p>
             <div class="text-3xl font-bold text-gray-900 mt-3">163</div>
@@ -670,7 +660,8 @@
             >
               <i class="fas fa-copy"></i><span>Copy</span>
             </button>
-            <!-- Call button --><button
+            <!-- Call button -->
+            <button
               class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
               data-id="1"
               data-name="National Emergency"
@@ -682,6 +673,53 @@
               <i class="fas fa-phone"></i>
               <span>Call</span>
             </button>
+          </div>
+        </div>
+      </div>
+      <!-- History Section -->
+      <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 w-full lg:w-[300px]">
+        <!-- Header -->
+        <div
+          class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6"
+        >
+          <!-- Left part -->
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-history text-blue-600 text-2xl"></i>
+            </div>
+            <h2 class="text-lg sm:text-lg font-bold text-gray-900">
+              Call History
+            </h2>
+          </div>
+          <button
+              class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn">
+              <span>Clear</span>
+            </button>
+
+          <!-- Button -->
+          <!-- <button
+            class="w-full sm:w-auto py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 transition"
+          >
+            <span>History Clear</span>
+          </button> -->
+        </div>
+
+        <!-- Content -->
+        <div
+          class="min-h-[200px] max-h-[400px] overflow-y-auto custom-scrollbar"
+          id="historyContent"
+        >
+          <!-- Empty State -->
+          <div
+            class="flex flex-col items-center justify-center text-center py-12 text-gray-500"
+          >
+            <i class="fas fa-phone-slash text-4xl mb-4 opacity-50"></i>
+            <p class="text-base sm:text-2xl">No call history yet</p>
+            <p class="text-xs sm:text-sm mt-2">
+              Your emergency calls will appear here
+            </p>
           </div>
         </div>
       </div>
