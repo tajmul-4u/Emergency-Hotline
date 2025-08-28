@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="styles/style.css" />
 
     <!-- Font Awsome CDN -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Emergency Hotline</title>
   </head>
@@ -35,14 +41,11 @@
           <div class="favorite-counter flex justify-between items-center gap-4">
             <!-- Heart count box -->
             <div
-              class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-4"
+              class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-3"
             >
               <span class="favorites-icon-count">100</span>
               <span class="favorites-icon"
-                ><img
-                  src="./assets/heart.png"
-                  class="w-6 h-6 rounded-full"
-                  alt=""
+                ><img src="./assets/heart.png" class="h-6 w-6" alt=""
               /></span>
             </div>
             <!-- Coin count box -->
@@ -84,66 +87,534 @@
       </div>
     </section>
     <!-- Main Body  -->
-    <section>
+    <section class="bg-[#f5fff6]">
       <!-- Emergency Hotline Card Section -->
-     <div class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative">
-  <!-- Top section -->
-  <div class="flex justify-between items-start mb-4">
-    <!-- Icon -->
-    <div class="w-20 h-20 rounded-xl bg-red-100 flex items-center justify-center">
-      <img src="./assets/emergency.png" alt="">
-      <!-- <i class="fas fa-siren-on text-red-600 text-xl"></i> -->
-    </div>
+      <div
+        class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative"
+      >
+        <!-- Top section -->
+        <div class="flex justify-between items-start mb-4">
+          <!-- Icon -->
+          <div
+            class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
+          >
+            <img
+              src="./assets/emergency.png"
+              class="h-[32px] w-[32px]"
+              alt=""
+            />
+          </div>
 
-    <!-- Heart button -->
-    <button
-      class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
-      data-id="1"
-    >
-      <i class="fa-regular fa-heart"></i>
-    </button>
-  </div>
+          <!-- Heart button -->
+          <button
+            class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+            data-id="1"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
 
-  <!-- Content section -->
-  <div class="mb-4">
-    <h3 class="text-lg font-bold text-gray-900">National Emergency Number</h3>
-    <p class="text-sm text-gray-500">National Emergency</p>
+        <!-- Content section -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-900">
+            National Emergency Number
+          </h3>
+          <p class="text-sm text-gray-500">National Emergency</p>
 
-    <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+          <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
 
-    <!-- Badge -->
-    <span class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800">
-      All
-    </span>
-  </div>
+          <!-- Badge -->
+          <span
+            class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800"
+          >
+            All
+          </span>
+        </div>
 
-  <!-- Action buttons -->
-  <div class="flex gap-3 mt-6">
-    <!-- Copy button -->
-    <button
-      class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
-      data-number="999"
-    >
-      <i class="fas fa-copy"></i>
-      <span>Copy</span>
-    </button>
+        <!-- Action buttons -->
+        <div class="flex gap-3 mt-6">
+          <!-- Copy button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
+            data-number="999"
+          >
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+          </button>
 
-    <!-- Call button -->
-    <button
-      class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
-      data-id="1"
-      data-name="National Emergency"
-      data-name-en="National Emergency"
-      data-number="999"
-      data-icon="fas fa-siren-on"
-      data-bg="from-green-500 to-green-600"
-    >
-      <i class="fas fa-phone"></i>
-      <span>Call</span>
-    </button>
-  </div>
-</div>
+          <!-- Call button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+            data-id="1"
+            data-name="National Emergency"
+            data-name-en="National Emergency"
+            data-number="999"
+            data-icon="fas fa-siren-on"
+            data-bg="from-green-500 to-green-600"
+          >
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- Emergency Police Service -->
+      <div class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative">
+        <!-- Top Section  -->
+        <div class="flex justify-between items-start mb-4">
+          <!-- Icon -->
+          <div
+            class="w-13 h-13 rounded-xl bg-[#dfefff] flex items-center justify-center"
+          >
+            <img src="./assets/police.png" alt="" />
+          </div>
+          <!-- Heart Button  -->
+          <button
+            class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+        <!-- Content section  -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-900">
+            Police Helpline Number
+          </h3>
+          <p class="text-sm text-gray-500">Police</p>
+          <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+          <!-- Badge  -->
+          <span
+            class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800"
+            >Police</span
+          >
+        </div>
+        <!-- Action button  -->
+         <div class="flex gap-3 mt-6">
+          <!-- Copy Button  -->
+           <button class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"><i class="fas fa-copy"></i><span>Copy</span></button>
+           <!-- Call Button  -->
+            <button class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to bg-green-600 hover:opacity-90 call-btn"
+            data-id="2"
+            data-name="Police Helpline Number"
+            data-name-en="Police"
+            data-number="999"
+            data-bg="from-green-500 to-green-600"><i class="fas fa-phone"></i><span>Call</span></button>
+         </div>
+      </div>
+      <!-- Emergency Fire Service Number -->
+        <div
+        class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative"
+      >
+        <!-- Top section -->
+        <div class="flex justify-between items-start mb-4">
+          <!-- Icon -->
+          <div
+            class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
+          >
+            <img
+              src="./assets/emergency.png"
+              class="h-[32px] w-[32px]"
+              alt=""
+            />
+          </div>
 
+          <!-- Heart button -->
+          <button
+            class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+            data-id="1"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Content section -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-900">
+            National Emergency Number
+          </h3>
+          <p class="text-sm text-gray-500">National Emergency</p>
+
+          <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+
+          <!-- Badge -->
+          <span
+            class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800"
+          >
+            All
+          </span>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="flex gap-3 mt-6">
+          <!-- Copy button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
+            data-number="999"
+          >
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+          </button>
+
+          <!-- Call button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+            data-id="1"
+            data-name="National Emergency"
+            data-name-en="National Emergency"
+            data-number="999"
+            data-icon="fas fa-siren-on"
+            data-bg="from-green-500 to-green-600"
+          >
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- Emergency Ambulance Service -->
+        <div
+        class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative"
+      >
+        <!-- Top section -->
+        <div class="flex justify-between items-start mb-4">
+          <!-- Icon -->
+          <div
+            class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
+          >
+            <img
+              src="./assets/emergency.png"
+              class="h-[32px] w-[32px]"
+              alt=""
+            />
+          </div>
+
+          <!-- Heart button -->
+          <button
+            class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+            data-id="1"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Content section -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-900">
+            National Emergency Number
+          </h3>
+          <p class="text-sm text-gray-500">National Emergency</p>
+
+          <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+
+          <!-- Badge -->
+          <span
+            class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800"
+          >
+            All
+          </span>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="flex gap-3 mt-6">
+          <!-- Copy button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
+            data-number="999"
+          >
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+          </button>
+
+          <!-- Call button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+            data-id="1"
+            data-name="National Emergency"
+            data-name-en="National Emergency"
+            data-number="999"
+            data-icon="fas fa-siren-on"
+            data-bg="from-green-500 to-green-600"
+          >
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- Emergency Women and Child Helpline -->
+        <div
+        class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative"
+      >
+        <!-- Top section -->
+        <div class="flex justify-between items-start mb-4">
+          <!-- Icon -->
+          <div
+            class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
+          >
+            <img
+              src="./assets/emergency.png"
+              class="h-[32px] w-[32px]"
+              alt=""
+            />
+          </div>
+
+          <!-- Heart button -->
+          <button
+            class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+            data-id="1"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Content section -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-900">
+            National Emergency Number
+          </h3>
+          <p class="text-sm text-gray-500">National Emergency</p>
+
+          <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+
+          <!-- Badge -->
+          <span
+            class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800"
+          >
+            All
+          </span>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="flex gap-3 mt-6">
+          <!-- Copy button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
+            data-number="999"
+          >
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+          </button>
+
+          <!-- Call button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+            data-id="1"
+            data-name="National Emergency"
+            data-name-en="National Emergency"
+            data-number="999"
+            data-icon="fas fa-siren-on"
+            data-bg="from-green-500 to-green-600"
+          >
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- Emergency Anti Corruption Helpline -->
+        <div
+        class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative"
+      >
+        <!-- Top section -->
+        <div class="flex justify-between items-start mb-4">
+          <!-- Icon -->
+          <div
+            class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
+          >
+            <img
+              src="./assets/emergency.png"
+              class="h-[32px] w-[32px]"
+              alt=""
+            />
+          </div>
+
+          <!-- Heart button -->
+          <button
+            class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+            data-id="1"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Content section -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-900">
+            National Emergency Number
+          </h3>
+          <p class="text-sm text-gray-500">National Emergency</p>
+
+          <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+
+          <!-- Badge -->
+          <span
+            class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800"
+          >
+            All
+          </span>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="flex gap-3 mt-6">
+          <!-- Copy button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
+            data-number="999"
+          >
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+          </button>
+
+          <!-- Call button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+            data-id="1"
+            data-name="National Emergency"
+            data-name-en="National Emergency"
+            data-number="999"
+            data-icon="fas fa-siren-on"
+            data-bg="from-green-500 to-green-600"
+          >
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- Emergency Electricity Helpline -->
+        <div
+        class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative"
+      >
+        <!-- Top section -->
+        <div class="flex justify-between items-start mb-4">
+          <!-- Icon -->
+          <div
+            class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
+          >
+            <img
+              src="./assets/emergency.png"
+              class="h-[32px] w-[32px]"
+              alt=""
+            />
+          </div>
+
+          <!-- Heart button -->
+          <button
+            class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+            data-id="1"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Content section -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-900">
+            National Emergency Number
+          </h3>
+          <p class="text-sm text-gray-500">National Emergency</p>
+
+          <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+
+          <!-- Badge -->
+          <span
+            class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800"
+          >
+            All
+          </span>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="flex gap-3 mt-6">
+          <!-- Copy button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
+            data-number="999"
+          >
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+          </button>
+
+          <!-- Call button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+            data-id="1"
+            data-name="National Emergency"
+            data-name-en="National Emergency"
+            data-number="999"
+            data-icon="fas fa-siren-on"
+            data-bg="from-green-500 to-green-600"
+          >
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!-- Emergency Brac Helpline -->
+        <div
+        class="rounded-2xl shadow-lg border border-gray-200 bg-white w-[320px] p-5 relative"
+      >
+        <!-- Top section -->
+        <div class="flex justify-between items-start mb-4">
+          <!-- Icon -->
+          <div
+            class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
+          >
+            <img
+              src="./assets/emergency.png"
+              class="h-[32px] w-[32px]"
+              alt=""
+            />
+          </div>
+
+          <!-- Heart button -->
+          <button
+            class="heart-btn w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 bg-gray-100 text-gray-400 hover:bg-red-50 hover:text-red-500"
+            data-id="1"
+          >
+            <i class="fa-regular fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Content section -->
+        <div class="mb-4">
+          <h3 class="text-lg font-bold text-gray-900">
+            National Emergency Number
+          </h3>
+          <p class="text-sm text-gray-500">National Emergency</p>
+
+          <div class="text-3xl font-bold text-gray-900 mt-3">999</div>
+
+          <!-- Badge -->
+          <span
+            class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide bg-blue-100 text-blue-800"
+          >
+            All
+          </span>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="flex gap-3 mt-6">
+          <!-- Copy button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-gray-700 flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-100 copy-btn"
+            data-number="999"
+          >
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+          </button>
+
+          <!-- Call button -->
+          <button
+            class="flex-1 py-2 px-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+            data-id="1"
+            data-name="National Emergency"
+            data-name-en="National Emergency"
+            data-number="999"
+            data-icon="fas fa-siren-on"
+            data-bg="from-green-500 to-green-600"
+          >
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+          </button>
+        </div>
+      </div>
+      <!--  -->
     </section>
   </body>
 </html>
