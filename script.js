@@ -40,19 +40,19 @@ document.querySelectorAll(".copy-btn").forEach((btn) => {
 });
  
 
-// CLEAR CALL HISTORY
+
 // Function to add call history
 function addToHistory(serviceName, number) {
   const historyContent = document.getElementById('historyContent');
 
-  // যদি empty-state থাকে, একবারেই remove করে দেবে
+  // If empty-state have then remove
   const emptyState = historyContent.querySelector(".empty-state");
   if (emptyState) {
     historyContent.removeChild(emptyState);
   }
 
 
-  // নতুন entry বানানো
+  // Create new entry
   const time = new Date().toLocaleString();
   const entry = document.createElement('div');
   entry.className = "p-3 border-b border-gray-200";
@@ -64,11 +64,11 @@ function addToHistory(serviceName, number) {
   historyContent.appendChild(entry);
 }
 
-// CALL BUTTON FUNCTIONALITY
+// Call Button functionality
 document.querySelectorAll('.call-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     if (coins < 20) {
-      alert("Not enough coins to make the call.");
+      alert("Not enough coins to make the call!");
       return;
     }
 
