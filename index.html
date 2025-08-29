@@ -24,57 +24,89 @@
   </head>
   <body class="hind-madurai-light bg-[#f5fff6]">
     <!-- Header -->
-    <header class="header">
-      <div class="container flex justify-between items-center">
-        <div class="logo flex items-center gap-2 ml-5 mt-2">
-          <span class="logo-icon"
-            ><img
+    <header class="header bg-white shadow-sm py-2">
+      <div
+        class="container mx-auto flex flex-wrap justify-between items-center px-4"
+      >
+        <!-- Logo icon -->
+        <div class="logo flex items-center gap-2">
+          <span class="logo-icon">
+            <img
               src="./assets/logo.png"
               alt=""
-              class="max-w-[50px] h-auto w-full"
-          /></span>
-          <h1 class="text-[#006747] text-2xl font-semibold mb-2">
+              class="max-w-[40px] h-auto w-full md:max-w-[50px]"
+            />
+          </span>
+          <h1
+            class="text-[#006747] text-xl md:text-2xl font-semibold leading-tight"
+          >
             Emergency<br />Service
           </h1>
         </div>
-        <div class="header-section mr-5">
-          <div class="favorite-counter flex justify-between items-center gap-4">
+
+        <!-- Heart count and buttom -->
+        <div
+          class="header-section mt-2 md:mt-0 flex flex-wrap items-center gap-2 sm:gap-4"
+        >
+          <div class="favorite-counter flex items-center gap-4">
             <!-- Heart count box -->
             <div
-              class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-3"
-            >
-              <div class="flex items-center justify-center gap-1 w-12 h-12">
-                <span class="text-black" id="heart-count">0</span>
-                <span class="favorites-icon"
-                  ><img src="./assets/heart.png" class="h-6 w-6" alt=""
-                /></span>
-              </div>
-            </div>
-            <!-- Coin count box -->
-            <div
-              class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-3"
+              class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-2 py-1 md:px-3 md:py-1"
             >
               <div
-                class="flex items-center justify-center gap-1 w-4 h-10"
-              ></div>
-              <span id="coin-count">100</span>
-              <span class="favorites-star"
-                ><img
-                  src="./assets/coin.png"
-                  class="w-5 h-5 rounded-full"
+                class="flex items-center justify-center md:w-10 md:h-10"
+              >
+                <span
+                  class="text-black text-sm md:text-base font-semibold"
+                  id="heart-count"
+                  >0</span
+                >
+              </div>
+              <span class="favorites-icon">
+                <img
+                  src="./assets/heart.png"
+                  class="h-5 w-5 md:h-6 md:w-6"
                   alt=""
-              /></span>
+                />
+              </span>
             </div>
-            <button class="copy-btn btn btn-soft bg-[#00a63e] rounded-full text-white">
-              <span id="copyCount">0</span>Copy
-            </button>
+
+            <!-- Coin count box -->
+            <div
+              class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-2 py-1 md:px-3 md:py-1"
+            >
+              <div
+                class="flex items-center justify-center md:w-10 md:h-10"
+              >
+                <span
+                  class="text-black text-sm md:text-base font-semibold"
+                  id="coin-count"
+                  >100</span
+                >
+              </div>
+              <span class="favorites-star">
+                <img
+                  src="./assets/coin.png"
+                  class="w-5 h-5 md:w-6 md:h-6"
+                  alt=""
+                />
+              </span>
+            </div>
           </div>
+
+          <!-- Copy button -->
+          <button
+            class="copy-btn btn bg-[#00a63e] rounded-full text-white px-3 py-1 text-sm md:text-base font-semibold whitespace-nowrap"
+          >
+            <span id="copyCount">0</span>Copy
+          </button>
         </div>
       </div>
     </header>
+
     <!-- Banner Section -->
     <section class="bg-[#006747]">
-      <div class="flex flex-col items-center justify-center mx-3 my-3">
+      <div class="flex flex-col items-center justify-center mx-3">
         <div class="text-center mt-3">
           <img
             src="./assets/logo-dark.png"
@@ -726,7 +758,7 @@
         >
           <!-- Empty State -->
           <div
-            class=" empty-state flex flex-col items-center justify-center text-center py-12 text-gray-500"
+            class="empty-state flex flex-col items-center justify-center text-center py-12 text-gray-500"
           >
             <i class="fas fa-phone-slash text-4xl mb-4 opacity-50"></i>
             <p class="text-base sm:text-2xl">No call history yet</p>
