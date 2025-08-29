@@ -43,8 +43,8 @@
             <div
               class="flex items-center justify-center gap-1 bg-[#41ff6b1a] rounded-full px-3"
             >
-              <div class="flex items-center justify-center gap-1 w-12 h-12 ">
-                <span class=" text-black" id="heart-count">0</span>
+              <div class="flex items-center justify-center gap-1 w-12 h-12">
+                <span class="text-black" id="heart-count">0</span>
                 <span class="favorites-icon"
                   ><img src="./assets/heart.png" class="h-6 w-6" alt=""
                 /></span>
@@ -65,8 +65,8 @@
                   alt=""
               /></span>
             </div>
-            <button class="btn btn-soft bg-[#00a63e] rounded-full text-white">
-              <span>0</span>Copy
+            <button class="copy-btn btn btn-soft bg-[#00a63e] rounded-full text-white">
+              <span id="copyCount">0</span>Copy
             </button>
           </div>
         </div>
@@ -102,7 +102,7 @@
             class="rounded-2xl shadow-lg border border-gray-200 bg-white w-full max-w-[320px] p-5 relative"
           >
             <!-- Top section -->
-            <div class="flex justify-between items-start mb-4 ">
+            <div class="flex justify-between items-start mb-4">
               <!-- Icon -->
               <div
                 class="w-13 h-13 rounded-xl bg-red-100 flex items-center justify-center"
@@ -130,7 +130,9 @@
               </h3>
               <p class="text-sm text-gray-500">National Emergency</p>
 
-              <div class="text-3xl font-bold text-gray-900 mt-3" id="Number-1">999</div>
+              <div class="text-3xl font-bold text-gray-900 mt-3" id="Number-1">
+                999
+              </div>
 
               <!-- Badge -->
               <span
@@ -711,16 +713,10 @@
           </div>
           <button
             class="w-full sm:w-auto py-2.5 px-6 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 call-btn"
+            id="clear-history-btn"
           >
             <span>Clear</span>
           </button>
-
-          <!-- Button -->
-          <!-- <button
-            class="w-full sm:w-auto py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 transition"
-          >
-            <span>History Clear</span>
-          </button> -->
         </div>
 
         <!-- Content -->
@@ -730,7 +726,7 @@
         >
           <!-- Empty State -->
           <div
-            class="flex flex-col items-center justify-center text-center py-12 text-gray-500"
+            class=" empty-state flex flex-col items-center justify-center text-center py-12 text-gray-500"
           >
             <i class="fas fa-phone-slash text-4xl mb-4 opacity-50"></i>
             <p class="text-base sm:text-2xl">No call history yet</p>
@@ -741,36 +737,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Custom Alert Modal -->
-    <div id="alertModal" class="fixed inset-0 z-50 hidden">
-      <div class="alert-overlay absolute inset-0"></div>
-      <div class="relative flex items-center justify-center min-h-screen p-4">
-        <div
-          class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 animate-bounce-in"
-        >
-          <div class="text-center">
-            <div
-              class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
-              id="alertIcon"
-            >
-              <!-- Icon will be set by JavaScript -->
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2" id="alertTitle">
-              Alert
-            </h3>
-            <p class="text-gray-600 mb-6" id="alertMessage">Message</p>
-            <button
-              class="btn-primary text-white px-8 py-3 rounded-xl font-semibold w-full"
-              onclick="closeAlert()"
-            >
-              OK
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script src="./main.js"></script>
   </body>
 </html>
